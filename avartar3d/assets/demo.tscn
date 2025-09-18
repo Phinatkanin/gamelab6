@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://j1rfu5nlmbm8"]
+
+[ext_resource type="Script" uid="uid://d6q4vhqow25w" path="res://demo.gd" id="1_457xp"]
+[ext_resource type="PackedScene" uid="uid://dfbkrsudu2q6c" path="res://assets/walk.tscn" id="2_xfgwy"]
+[ext_resource type="PackedScene" uid="uid://b3tdnvnpeikp3" path="res://assets/run.tscn" id="3_137jn"]
+[ext_resource type="PackedScene" uid="uid://cgtgdoqjph7mw" path="res://assets/death.tscn" id="4_uskw3"]
+
+[node name="Demo" type="Node3D"]
+script = ExtResource("1_457xp")
+
+[node name="Walk" parent="." instance=ExtResource("2_xfgwy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.718743, 0, -0.227385)
+
+[node name="Run" parent="." instance=ExtResource("3_137jn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00495, 0, -0.427565)
+
+[node name="Death" parent="." instance=ExtResource("4_uskw3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7122, 0, -0.275343)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.975623, 0.219455, 0, -0.219455, 0.975623, 0.703317, 1.92308, 4.75931)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.968204, 0.25016, 0, -0.25016, 0.968204, 0.56031, 4.2487, 7.94441)

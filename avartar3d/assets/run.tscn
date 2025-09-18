@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3tdnvnpeikp3"]
+
+[ext_resource type="PackedScene" uid="uid://b12rtes61p5w2" path="res://assets/Running.tscn" id="1_f5tqh"]
+
+[node name="Run" type="Node3D"]
+
+[node name="Running" parent="." instance=ExtResource("1_f5tqh")]
